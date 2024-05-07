@@ -8,7 +8,6 @@ if [ ! -d "/var/lib/mysql/mysql" ]; then
 
 	#start mariadb
 	service mariadb start
-	sleep 2
 
 	#creates the command with root flags
 	mysql="mysql -uroot -hlocalhost"

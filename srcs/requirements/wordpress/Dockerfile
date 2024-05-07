@@ -6,7 +6,6 @@ RUN	set -ex; \
 	apt-get install -y wget; \
 	apt-get install -y wordpress php-fpm; \
 	apt-get install -y less; \
-	apt-get install -y redis php-redis; \
 	wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar; \
 	chmod +x wp-cli.phar; \
 	mv wp-cli.phar /usr/local/bin/wp; \
