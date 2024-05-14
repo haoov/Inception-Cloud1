@@ -2,6 +2,7 @@
 
 set -ex
 
+sleep 2
 if [ ! -f wp-config.php ]; then
 	#create the wp-config.php file with the rights values
 	wp config create --dbname="${MARIADB_DATABASE}" --dbuser=${MARIADB_USER} --dbpass=${MARIADB_PASSWORD} --dbhost=${MARIADB_HOSTNAME} --allow-root
