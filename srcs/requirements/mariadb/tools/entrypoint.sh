@@ -31,6 +31,8 @@ if [ ! -d "/var/lib/mysql/mysql" ]; then
 
 	#stop mariadb before launching mysqld
 	mariadb-admin -p${MARIADB_ROOT_PASSWORD} shutdown
+else
+  echo "Database already exist"
 fi
 
 #replace shell with current execution instead of exiting
