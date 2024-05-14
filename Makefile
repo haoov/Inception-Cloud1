@@ -17,6 +17,6 @@ stop :
 fclean :
 	@cd $(SRCS) && $(SUDO) docker-compose down -v
 	@$(SUDO) docker system prune -f
-	@$(SUDO) rm -rf ~/data/mariadb/* ~/data/portainer/* ~/data/wordpress/*
+	@$(SUDO) rm -rf /mnt/data/mariadb/* /mnt/data/portainer/* ~/data/wordpress/*
 
 .PHONY : build run fclean
